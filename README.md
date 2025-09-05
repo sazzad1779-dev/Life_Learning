@@ -48,28 +48,19 @@ Today 05/09/2025, I'm revising my carrier.
     4. Error Tracking & Alerts
     5. LM/AI-Specific Monitoring
 
-            Best Setup by Use Case
-        ✅ For a general web application:
+        Best Setup by Use Case
+        -   For a general web application:
+            - System metrics: Prometheus + Grafana
+            - Logs: ELK stack or Grafana Loki
+            - Traces: Jaeger + OpenTelemetry
+            - Errors: Sentry
 
-        Metrics: Prometheus + Grafana
-
-        Logs: ELK stack or Grafana Loki
-
-        Traces: Jaeger + OpenTelemetry
-
-        Errors: Sentry
-
-        ✅ For an LLM chatbot / AI application:
-
-        System metrics: Prometheus + Grafana
-
-        Logs: Grafana Loki or ELK
-
-        LLM monitoring: Langfuse (open source) or Arize AI
-
-        Experiment tracking: W&B or MLflow
-
-        Errors: Sentry
+        - For an LLM chatbot / AI application:
+            - System metrics: Prometheus + Grafana
+            - Logs: Grafana Loki or ELK
+            - LLM monitoring: Langfuse (open source) or Arize AI
+            - Experiment tracking: W&B or MLflow
+            - Errors: Sentry
      ```   
         Prometheus + Grafana → industry standard, open-source.
         Prometheus = metrics collection.

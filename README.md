@@ -16,8 +16,8 @@ Today 05/09/2025, I'm revising my carrier.
 7. Model Inference:
 8. Model Evaluation:
 9.  APIs:
-	a.	OAuth2, JWT, SSO
-	b. API Gateway & Rate limiting
+    - OAuth2, JWT, SSO
+    - API Gateway & Rate limiting
 10. MLOps:
 11. Application Monitoring and Observability:
 12. Cloud & Deployment:

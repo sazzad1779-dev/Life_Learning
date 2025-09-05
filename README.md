@@ -25,24 +25,30 @@ Today 05/09/2025, I'm revising my carrier.
         - Single Expert Architecture
         - Multi Expert Architecture (MOE)
 6. Model Pre-Training:
+
+7. Model Finetuning:
     1. Supervised Fine-Tuning (SFT)
     2. Reinforcement Learning from Human Feedback (RLHF)
         - DPO
         - PPO
-
-7. Model Finetuning:
 7. Model Inference & Optimization:
     1. KV cache
     2. Quantization
 
 8. Model Evaluation:
+
 9.  APIs:
     - OAuth2, JWT, SSO
     - API Gateway & Rate limiting
 10. MLOps:
 11. Application Monitoring and Observability:
 12. Cloud & Deployment:
+
+
 13. Web Interface
+14. RAG System
+15. Agent System
+16. Multi Agent System
 
 
 ## References:

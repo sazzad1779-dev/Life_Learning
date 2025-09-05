@@ -42,6 +42,20 @@ Today 05/09/2025, I'm revising my carrier.
     - API Gateway & Rate limiting
 10. MLOps:
 11. Application Monitoring and Observability:
+    1. Infrastructure & System Monitoring
+    2. Application Performance Monitoring (APM)
+    3. Logs & Event Monitoring
+    4. Error Tracking & Alerts
+    5. LM/AI-Specific Monitoring
+     ```   
+        Prometheus + Grafana → industry standard, open-source.
+        Prometheus = metrics collection.
+        Grafana = visualization dashboards.
+        Works well for servers, containers (K8s), and microservices.
+   
+    Datadog (SaaS, easy to use, strong integrations).
+    ```
+
 12. Cloud & Deployment:
 
 

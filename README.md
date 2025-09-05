@@ -4,9 +4,9 @@ Today 05/09/2025, I'm revising my carrier.
 
 ## Learning points:
 1. Core Foundations:
-		1. Data Structure and Algorithms:
-		2. Programming:
-		3. Math & Stats:
+    1. Data Structure and Algorithms:
+    2. Programming:
+    3. Math & Stats:
 2. Low-level System Design:
 3. High-level System Design:
 4. Data engineering:

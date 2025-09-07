@@ -96,3 +96,11 @@ Once Prometheus is running, we can access its web UI by navigating to `http://lo
 2. **Querying**: The "Query" tab allows us to run PromQL queries to retrieve specific metrics and their values.
 3. **Status**: The "Status" tab provides information about the Prometheus server, including its configuration, targets, and rules.
 4. **Alerts**: If we have configured alerting rules, the "Alerts" tab will show the current state of alerts. 
+
+
+
+
+
+### Data model
+
+Defining Data Model structure: 

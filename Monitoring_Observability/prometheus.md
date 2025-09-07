@@ -68,10 +68,12 @@ There are three blocks of configuration in the example configuration file: `glob
 The `global` block controls the Prometheus server's global configuration.
 - `scrape_interval`, controls how often Prometheus will scrape targets.
 - `evaluation_interval`, controls how often Prometheus will evaluate rules.
+
 The `rule_files` block specifies the location of any rules we want the Prometheus server to load.
-`scrape_configs`, controls what resources Prometheus monitors. 
+- `scrape_configs`, controls what resources Prometheus monitors. 
+
 The `job_name` is a label that is attached to all metrics scraped from this configuration.
-`static_configs` is a list of targets that Prometheus will scrape. Each target is specified by a `targets` key, which is a list of host:port pairs.
+- `static_configs` is a list of targets that Prometheus will scrape. Each target is specified by a `targets` key, which is a list of host:port pairs.
 
 
 

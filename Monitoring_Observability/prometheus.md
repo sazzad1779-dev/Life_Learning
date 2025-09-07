@@ -130,3 +130,20 @@ Do not use a counter to expose a value that can decrease. For example, do not us
 
 **Summary**: Similar to a histogram, a summary samples observations. It also provides a total count of observations and a sum of all observed values. Additionally, it calculates configurable quantiles over a sliding time window.
 
+
+### Jobs and instances
+
+A job is a logical group of instances with the same purpose, such as a web application or a database. Each instance within a job is identified by its network address (IP or hostname) and port. For example, a job named `webapp` might consist of multiple instances running on different servers or ports.
+
+For example, an API server job with four replicated instances:
+
+**job: api-server**
+- instance 1: 1.2.3.4:5670
+- instance 2: 1.2.3.4:5671
+- instance 3: 5.6.7.8:5670
+- instance 4: 5.6.7.8:5671
+
+Automatically generated labels and time series
+Prometheus automatically adds several labels to each time series it scrapes. The most important ones are:
+- `job`: The job name as defined in the scrape configuration.
+- `instance`: The `<host>:<port>` of the scraped target.

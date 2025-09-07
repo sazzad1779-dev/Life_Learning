@@ -12,8 +12,10 @@ It's a matrics based monitoring system written in go.
 ![Prometheus System Architecture](architechture.png)
 
 **How it works?**
+
 Prometheus is a pull based monitoring system over HTTP from a set of system and services (this call taget).
-From the target, Prometheus pulls data by autometically or Manual exporter and store as Time Series DataBase(TSDB).The term time series refers to the recording of changes over time. 
+
+From the target, Prometheus pulls data autometically or Manual exporter and store as Time Series DataBase(TSDB).The term time series refers to the recording of changes over time. 
 
 ### **Core Features**
 Prometheus's main features are:
@@ -50,6 +52,8 @@ The Prometheus monitoring server
 **Configuring Prometheus**
 Prometheus configuration is YAML. The Prometheus download comes with a sample configuration in a file called prometheus.yml that is a good place to get started.
 ```bash
+## prometheus.yml
+
 global:
   scrape_interval:     15s
   evaluation_interval: 15s
@@ -65,6 +69,7 @@ scrape_configs:
 ```
 
 There are three blocks of configuration in the example configuration file: `global`, `rule_files`, and `scrape_configs`.
+
 The `global` block controls the Prometheus server's global configuration.
 - `scrape_interval`, controls how often Prometheus will scrape targets.
 - `evaluation_interval`, controls how often Prometheus will evaluate rules.

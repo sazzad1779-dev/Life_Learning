@@ -99,8 +99,24 @@ Once Prometheus is running, we can access its web UI by navigating to `http://lo
 
 
 
-
-
 ### Data model
 
+Prometheus fundamentally stores all data as time series: streams of timestamped values belonging to the same metric and the same set of labeled dimensions.
+
 Defining Data Model structure: 
+
+
+### Metric types
+
+The Prometheus client libraries offer four core metric types. The Prometheus server does not yet make use of the type information and flattens all data into untyped time series. This may change in the future.
+
+**Counter**: A counter is a cumulative metric that represents a single monotonically increasing counter whose value can only increase or be reset to zero on restart. For example, you can use a counter to represent the number of requests served, tasks completed, or errors.
+
+Do not use a counter to expose a value that can decrease. For example, do not use a counter for the number of currently running processes; instead use a gauge.
+
+**Gauge**: A gauge is a metric that represents a single numerical value that can arbitrarily go up and down. Gauges are typically used for measured values like temperatures or current memory usage, but also "counts" that can go up and down, like the number of concurrent requests.
+
+**Histogram**: A histogram samples observations (usually things like request durations or response sizes) and counts them in configurable buckets. It also provides a sum of all observed values.
+
+**Summary**: Similar to a histogram, a summary samples observations. It also provides a total count of observations and a sum of all observed values. Additionally, it calculates configurable quantiles over a sliding time window.
+

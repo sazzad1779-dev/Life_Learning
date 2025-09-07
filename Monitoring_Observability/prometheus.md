@@ -80,5 +80,19 @@ The `rule_files` block specifies the location of any rules we want the Prometheu
 The `job_name` is a label that is attached to all metrics scraped from this configuration.
 - `static_configs` is a list of targets that Prometheus will scrape. Each target is specified by a `targets` key, which is a list of host:port pairs.
 
+Prometheus expects metrics to be available on targets on a path of `/metrics`. So this default job is scraping via the URL:` http://localhost:9090/metrics`.
+
+The time series data returned will detail the state and performance of the Prometheus server.
 
 
+**To start Prometheus:**
+```bash
+  ./prometheus --config.file=prometheus.yml
+```
+
+
+Once Prometheus is running, we can access its web UI by navigating to `http://localhost:9090` in a web browser. The web UI provides several features, including:
+1. **Graphing**: We can use the "Graph" tab to visualize metrics over time. We can enter PromQL queries to create graphs and analyze the data.
+2. **Querying**: The "Query" tab allows us to run PromQL queries to retrieve specific metrics and their values.
+3. **Status**: The "Status" tab provides information about the Prometheus server, including its configuration, targets, and rules.
+4. **Alerts**: If we have configured alerting rules, the "Alerts" tab will show the current state of alerts. 

@@ -103,7 +103,17 @@ Once Prometheus is running, we can access its web UI by navigating to `http://lo
 
 Prometheus fundamentally stores all data as time series: streams of timestamped values belonging to the same metric and the same set of labeled dimensions.
 
-Defining Data Model structure: 
+A time series is identified by a metric name and a set of key-value pairs called labels. For example, consider the following time series:
+```bash
+# HELP http_requests_total Total number of HTTP requests.
+# TYPE http_requests_total counter
+http_requests_total{method="POST", handler="/messages"} 1027 1395066363000
+```
+Here, `http_requests_total` is the metric name. It indicates that the metric is a counter that represents the total number of HTTP requests. The labels `method="POST"` and `handler="/messages"` specify additional dimensions for this metric. This means that we can filter or group this metric by the HTTP method (e.g., POST, GET) and the request handler (e.g., `/messages`, `/users`). The value `1027` is the count of requests at the timestamp `1395066363000`.
+
+**Metric Names**: Metric names convey the general nature of the system being measured. They are typically prefixed with the name of the application or system that the metric belongs to, followed by a descriptive name. For example, `node_cpu_seconds_total` indicates CPU usage from a node exporter.
+
+**Labels**: Labels are key-value pairs that enable Prometheus's multi-dimensional data model. They allow you to filter and aggregate metrics based on these dimensions. For example, `http_requests_total{method="POST", status="200"}` would give you the total number of successful POST requests. Labels are crucial for slicing and dicing your data to gain specific insights.
 
 
 ### Metric types

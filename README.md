@@ -47,7 +47,6 @@ Today 05/09/2025, I'm revising my carrier.
     3. Logs & Event Monitoring
     4. Error Tracking & Alerts
     5. LM/AI-Specific Monitoring
-
         Best Setup by Use Case
         -   For a general web application:
             - System metrics: Prometheus + Grafana
@@ -71,7 +70,15 @@ Today 05/09/2025, I'm revising my carrier.
 
 
 13. Web Interface
-14. RAG System
+14. RAG System:
+    1. Data Extraction technique
+    2. Chunking Strategy
+        - Overlapping chunking
+        - adaptive chunking
+        - contextual chunking
+    3. Vector DB
+    4. Retrival Strategy
+    5. 
 15. Agent System
 16. Multi Agent System
 

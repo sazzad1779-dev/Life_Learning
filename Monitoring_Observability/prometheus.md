@@ -147,3 +147,4 @@ Automatically generated labels and time series
 Prometheus automatically adds several labels to each time series it scrapes. The most important ones are:
 - `job`: The job name as defined in the scrape configuration.
 - `instance`: The `<host>:<port>` of the scraped target.
+

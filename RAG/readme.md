@@ -11,6 +11,8 @@ RAG addresses these issues by allowing models to retrieve up-to-date and domain-
 
 The basic structure of RAG involves three key components: `indexing`, `retrieval`, and `generation`.
 
+![Rag Architecture](rag.png)
+
 #### Indexing
 This step involves several key steps: chunking, embedding, and storing embeddings in a database .
 **Chunking**:

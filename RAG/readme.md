@@ -13,3 +13,15 @@ The basic structure of RAG involves three key components: `indexing`, `retrieval
 
 #### Indexing
 This step involves several key steps: chunking, embedding, and storing embeddings in a database .
+**Chunking**:
+Chunking refers to dividing documents into smaller sections or chunks. Each chunk is a segment of the document that can be independently processed and searched. This helps in handling large documents by focusing on relevant sections rather than the entire document.
+
+Benefits:
+
+- Improves search efficiency.
+- Enhances the relevance of retrieved information.
+- Allows more precise targeting of specific information within large documents.
+
+**Embeddings for Chunks**:
+For each text chunk, then need to create text embeddings, which are numeric representations of the text in the vector space. Words with similar meanings are expected to be in closer proximity or have a shorter distance in the vector space. 
+

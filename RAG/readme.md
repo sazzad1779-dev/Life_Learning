@@ -25,3 +25,11 @@ Benefits:
 **Embeddings for Chunks**:
 For each text chunk, then need to create text embeddings, which are numeric representations of the text in the vector space. Words with similar meanings are expected to be in closer proximity or have a shorter distance in the vector space. 
 
+**Storing Embeddings in a Vector Database**:
+After creating embeddings for each chunk, they are stored in a vector database. This database allows efficient searching and retrieval of similar documents based on their embeddings.
+
+Vector Database:
+
+- Stores high-dimensional vectors representing the chunks.
+- Supports fast similarity searches using methods like Hierarchical Navigable Small World (HNSW), k-Nearest Neighbors (KNN), and FAISS.
+

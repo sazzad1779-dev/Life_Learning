@@ -41,5 +41,11 @@ Once the query is converted into an embedding, the system compares the query emb
 
 These chunks are considered to be the most relevant to the user’s query.
 
+One common method used for measuring similarity between embeddings is Cosine Similarity.
+*Cosine Similarity:*
+
+- Measures the cosine of the angle between two vectors. It ranges from -1 to 1, where 1 means the vectors are identical, 0 means they are orthogonal (no similarity), and -1 means they are diametrically opposed.
+- This method is effective because it focuses on the direction of the vectors rather than their magnitude, making it robust to differences in vector length.
+
 #### Generation
 The retrieved text chunks, along with the initial user query, are fed into a language model. The algorithm will use this information to generate a coherent response to the user’s questions through a chat interface.

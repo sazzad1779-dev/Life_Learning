@@ -67,6 +67,7 @@ Today 05/09/2025, I'm revising my carrier.
     ```
 
 12. Cloud & Deployment:
+    1. AWS Basic
 
 
 13. Web Interface

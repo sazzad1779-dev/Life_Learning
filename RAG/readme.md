@@ -59,3 +59,4 @@ One common method used for measuring similarity between embeddings is Cosine Sim
 
 #### Generation
 The retrieved text chunks, along with the initial user query, are fed into a language model. The algorithm will use this information to generate a coherent response to the user’s questions through a chat interface.
+

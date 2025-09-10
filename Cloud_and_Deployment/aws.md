@@ -13,3 +13,16 @@ AWS offers over 200 services including:
 - S3: Object storage for files and media.
 - RDS: Managed relational databases.
 - Lambda: Run code without managing servers.
+
+### Understanding AWS Fundamentals
+
+To effectively use AWS, you must understand its foundational concepts:
+1. Regions
+AWS operates in multiple geographical regions worldwide. Each region consists of one or more data centers and is designed to provide low-latency services to nearby users.
+
+2. Availability Zones (AZs)
+Each region includes multiple Availability Zones, which are isolated data centers. These zones provide high availability and fault tolerance, ensuring your application remains operational even if one zone fails.
+
+3. Global Network Infrastructure
+AWS has a global network of high-speed fiber connections linking its data centers. This infrastructure enables optimized performance, reduced latency, and better disaster recovery options.
+

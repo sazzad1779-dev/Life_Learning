@@ -55,6 +55,6 @@ Whether you are a startup or an enterprise, AWS allows you to build and run appl
 - High availability.
 
 ### What is Amazon VPC?
-
+With Amazon Virtual Private Cloud (Amazon VPC), you can launch AWS resources in a logically isolated virtual network that you've defined. This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
 
 

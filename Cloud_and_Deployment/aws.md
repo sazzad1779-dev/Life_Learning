@@ -58,3 +58,66 @@ Whether you are a startup or an enterprise, AWS allows you to build and run appl
 With Amazon Virtual Private Cloud (Amazon VPC), you can launch AWS resources in a logically isolated virtual network that you've defined. This virtual network closely resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS.
 
 
+Ports & Protocols: e.g., HTTP uses TCP port 80, HTTPS uses TCP port 443.
+
+Stateful vs Stateless Firewalls:
+
+Stateful remembers connections (like AWS Security Groups).
+
+Stateless checks each packet independently (like AWS NACLs).
+
+Hands-on
+
+On your computer, list open ports:
+Linux/Mac: sudo lsof -i -P -n | grep LISTEN
+Windows: netstat -ano | find "LISTEN"
+
+5️⃣ NAT & VPN Basics
+
+Concepts
+
+NAT (Network Address Translation): Lets many private IPs share a single public IP.
+
+VPN (Virtual Private Network): Creates an encrypted tunnel between networks or a device and a network.
+
+Hands-on
+
+If you use a home router, log in and look for its NAT table or port-forwarding settings to see NAT in action.
+
+📚 Resources
+
+Computer Networking: Principles, Protocols and Practice (free online book)
+
+FreeCodeCamp YouTube: “Computer Networking Full Course” (~2 hours)
+
+Subnetting practice site: subnettingpractice.com
+
+✅ Goal for Stage 1
+
+You should be able to:
+
+Explain CIDR notation and design subnets.
+
+Read or create a basic routing table.
+
+Describe how DNS resolves a domain.
+
+Understand firewall rules and common ports.
+
+Explain how NAT and VPNs work.
+
+Would you like me to provide a 1-week study schedule for Stage 1 (e.g., daily topics and small tasks), or would you prefer to start with a deep dive into one of these concepts like IP addressing first?
+
+You said:
+indepth
+ChatGPT said:
+Thought for 33s
+
+Nice — let’s go very deep on Stage 1 (core networking fundamentals). I’ll explain concepts, show worked calculations (digit-by-digit), give examples you can practice, and list the commands/tools to use. Ready? 🚀
+
+1 — Network models (very short, important mapping)
+
+OSI (7 layers) — Application, Presentation, Session, Transport, Network, Data Link, Physical.
+
+TCP/IP (4 layers) — Application, Transport (TCP/UDP), Internet (IP), Link (Ethernet/802.11).
+Mapping is useful: IP lives at the Internet/Network layer, ARP & switches at Data Link, TCP/UDP at Transport.

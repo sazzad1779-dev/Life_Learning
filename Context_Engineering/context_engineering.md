@@ -15,12 +15,27 @@ This engineered context is a composite of multiple information streams, includin
 
 #### **The "Context-as-a-Compiler" Analogy**
 
+A powerful mental model for understanding this new paradigm is the " **Context-as-a-Compiler** " analogy, a concept discussed by leading researchers like Andrej Karpathy. This model **reframes the LLM as a new kind of compiler that translates a high-level, often ambiguous language (human intent expressed in natural language) into a low-level, executable output (e.g., code, API calls, structured JSON).**
+
+In this analogy,  **the prompt is not just a question; it is the source code** .  **The context is everything else the compiler needs to produce a correct, non-hallucinated binary** .
+
+ This includes the equivalent of:
+
+- Libraries and Dependencies: Retrieved documents and knowledge sources.
+- Type Definitions and Interfaces: API schemas and tool descriptions.
+- Environmental Variables: User state and real-time system information.
 
 #### **Deterministic vs. Probabilistic Context**
 
-
 * Deterministic Context refers to all static, controlled, and predictable inputs provided to the LLM. This includes the system prompt, user-uploaded documents, few-shot examples, and hard-coded rules or instructions. Most traditional prompt engineering techniques are focused on optimizing this deterministic portion of the context for clarity, efficiency, and cost (e.g., token usage).
 * Probabilistic Context  **encompasses all dynamic, external, and inherently uncertain information sources that the LLM can access** . This primarily includes results from web searches or queries against large, evolving internal databases. When an agent is given access to the internet, this probabilistic context can overwhelm the deterministic inputs due to its sheer volume and variability.
+
+#### **RAG vs. Fine-Tuning**
+
+A primary strategic decision facing any team building with LLMs is whether to use RAG, fine-tuning, or both.
+
+![1761735220991](image/context_engineering/1761735220991.png)
+
 
 ### [How Long Contexts Fail](https://www.dbreunig.com/2025/06/22/how-contexts-fail-and-how-to-fix-them.html)
 
